@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RBAS — Estates & Residences</title>
+<meta name="description" content="A curated portfolio of architect-designed residences. Presented in full 3D.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">RBAS</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#collection">Collection</a>
+      <a href="#walkthrough">3D Walkthrough</a>
+      <a href="#about">The Practice</a>
+      <a href="#advisors">Advisors</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="tel:+912200000000" class="nav-phone">+91 22 0000 0000</a>
+      <a href="#contact" class="btn btn-dark">Private Viewing</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <p class="eyebrow reveal">Mumbai &nbsp;·&nbsp; Goa &nbsp;·&nbsp; Alibaug &nbsp;—&nbsp; Est. 2009</p>
+
+    <h1 class="display reveal">
+      Considered homes<br>
+      for <em>considered</em> lives.
+    </h1>
+
+    <p class="lede reveal">
+      A small, deliberate portfolio of architect-designed residences —
+      each one visited, measured, and rendered in full three dimensions
+      before it reaches you.
+    </p>
+
+    <div class="search reveal">
+      <div class="field">
+        <label for="loc">Location</label>
+        <select id="loc">
+          <option>All locations</option>
+          <option>Worli</option>
+          <option>Bandra West</option>
+          <option>Alibaug</option>
+          <option>North Goa</option>
+        </select>
+      </div>
+      <span class="rule"></span>
+      <div class="field">
+        <label for="typ">Residence</label>
+        <select id="typ">
+          <option>Any type</option>
+          <option>Apartment</option>
+          <option>Villa</option>
+          <option>Penthouse</option>
+        </select>
+      </div>
+      <span class="rule"></span>
+      <div class="field">
+        <label for="bud">Budget</label>
+        <select id="bud">
+          <option>No limit</option>
+          <option>₹3 – 6 Cr</option>
+          <option>₹6 – 12 Cr</option>
+          <option>₹12 Cr +</option>
+        </select>
+      </div>
+      <button class="btn btn-dark">Search</button>
+    </div>
+
+    <div class="hero-meta reveal">
+      <div><strong>146</strong><span>Residences<br>on file</span></div>
+      <div><strong>0%</strong><span>Buyer<br>brokerage</span></div>
+      <div><strong>19</strong><span>Days to<br>exchange</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual" id="heroVisual">
+    <div class="hero-frame">
+      <div class="hero-img" data-parallax="0.14">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+             alt="Contemporary residence with clean horizontal lines" onerror="this.remove()">
+      </div>
+      <span class="corner corner-tl"></span>
+      <span class="corner corner-br"></span>
+    </div>
+
+    <aside class="glass-card tilt" data-tilt="16">
+      <div class="gc-top">
+        <span class="tag">Now viewing</span>
+        <span class="gc-idx">01 / 146</span>
+      </div>
+      <h3>Casa Marena</h3>
+      <p class="gc-loc">Assagao, North Goa</p>
+      <div class="gc-row">
+        <span>5 bed</span><span>6 bath</span><span>7,400 sqft</span>
+      </div>
+      <div class="gc-foot">
+        <span class="gc-price">₹14.2 Cr</span>
+        <a href="#collection" class="gc-link" data-open="1">View residence →</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="scroll-cue"><span></span>Scroll</div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Worli</span><i></i><span>Bandra West</span><i></i><span>Assagao</span><i></i>
+    <span>Kihim</span><i></i><span>Alibaug</span><i></i><span>Powai</span><i></i>
+    <span>Juhu</span><i></i><span>Varca</span><i></i>
+    <span>Worli</span><i></i><span>Bandra West</span><i></i><span>Assagao</span><i></i>
+    <span>Kihim</span><i></i><span>Alibaug</span><i></i><span>Powai</span><i></i>
+    <span>Juhu</span><i></i><span>Varca</span><i></i>
+  </div>
+</div>
+
+<!-- ============ COLLECTION ============ -->
+<section class="collection" id="collection">
+  <div class="container">
+    <header class="sec-head reveal">
+      <div>
+        <p class="eyebrow">01 — The Collection</p>
+        <h2 class="display-sm">Residences currently<br>held on file.</h2>
+      </div>
+      <p class="sec-note">
+        Six of one hundred and forty-six. Every listing is accompanied by a
+        measured floor plan, a lighting study, and a navigable 3D model.
+      </p>
+    </header>
+
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="apartment">Apartments</button>
+      <button class="filter" data-filter="villa">Villas</button>
+      <button class="filter" data-filter="penthouse">Penthouses</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <article class="card span7 reveal" data-cat="villa" data-id="1">
+        <div class="media ratio-wide grad-a">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1400&q=80" alt="Illuminated modern villa at dusk" onerror="this.remove()">
+          <span class="badge">3D Tour</span>
+          <span class="idx">01</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>Casa Marena</h3>
+            <span class="price">₹14.2 Cr</span>
+          </div>
+          <p class="loc">Assagao, North Goa</p>
+          <ul class="specs"><li>5 bed</li><li>6 bath</li><li>7,400 sqft</li><li>Pool</li></ul>
+        </div>
+      </article>
+
+      <article class="card span5 reveal" data-cat="penthouse" data-id="2">
+        <div class="media grad-b">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Open-plan living room with warm timber" onerror="this.remove()">
+          <span class="badge">New</span>
+          <span class="idx">02</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>The Worli Penthouse</h3>
+            <span class="price">₹18.5 Cr</span>
+          </div>
+          <p class="loc">Worli Sea Face, Mumbai</p>
+          <ul class="specs"><li>4 bed</li><li>5 bath</li><li>5,100 sqft</li></ul>
+        </div>
+      </article>
+
+      <article class="card span5 reveal" data-cat="apartment" data-id="3">
+        <div class="media grad-c">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="Minimal interior with soft daylight" onerror="this.remove()">
+          <span class="badge">Corner unit</span>
+          <span class="idx">03</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>Chapel Road Apartment</h3>
+            <span class="price">₹6.4 Cr</span>
+          </div>
+          <p class="loc">Bandra West, Mumbai</p>
+          <ul class="specs"><li>3 bed</li><li>3 bath</li><li>2,150 sqft</li></ul>
+        </div>
+      </article>
+
+      <article class="card span7 reveal" data-cat="villa" data-id="4">
+        <div class="media ratio-wide grad-d">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1400&q=80" alt="Villa with reflecting pool and lawn" onerror="this.remove()">
+          <span class="badge">Sea facing</span>
+          <span class="idx">04</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>Palm Grove House</h3>
+            <span class="price">₹11.9 Cr</span>
+          </div>
+          <p class="loc">Kihim, Alibaug</p>
+          <ul class="specs"><li>6 bed</li><li>7 bath</li><li>9,200 sqft</li><li>Guest cottage</li></ul>
+        </div>
+      </article>
+
+      <article class="card span6 reveal" data-cat="apartment" data-id="5">
+        <div class="media grad-e">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Glass tower facade" onerror="this.remove()">
+          <span class="badge">High floor</span>
+          <span class="idx">05</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>One Millers Bay</h3>
+            <span class="price">₹8.7 Cr</span>
+          </div>
+          <p class="loc">Lower Parel, Mumbai</p>
+          <ul class="specs"><li>3 bed</li><li>4 bath</li><li>2,600 sqft</li></ul>
+        </div>
+      </article>
+
+      <article class="card span6 reveal" data-cat="penthouse" data-id="6">
+        <div class="media grad-f">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" alt="Contemporary residence with landscaped drive" onerror="this.remove()">
+          <span class="badge">Rooftop</span>
+          <span class="idx">06</span>
+        </div>
+        <div class="card-body">
+          <div class="card-line">
+            <h3>Verandah House</h3>
+            <span class="price">₹9.3 Cr</span>
+          </div>
+          <p class="loc">Juhu, Mumbai</p>
+          <ul class="specs"><li>4 bed</li><li>4 bath</li><li>3,800 sqft</li></ul>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="sec-foot reveal">
+      <a href="#" class="btn btn-ghost">View all 146 residences →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3D WALKTHROUGH ============ -->
+<section class="walkthrough" id="walkthrough">
+  <div class="container wt-grid">
+    <div class="wt-copy reveal">
+      <p class="eyebrow">02 — Three Dimensions</p>
+      <h2 class="display-sm">Walk the rooms<br>before you arrive.</h2>
+      <p class="body-lg">
+        Each residence is laser-measured and rebuilt as a navigable model.
+        Move through it at any hour, from anywhere — then let the sunlight
+        study show you how the space behaves at 8am in July.
+      </p>
+
+      <ul class="features">
+        <li>
+          <span class="f-num">i</span>
+          <div><strong>Navigable models</strong><p>Room-by-room geometry you can move through freely.</p></div>
+        </li>
+        <li>
+          <span class="f-num">ii</span>
+          <div><strong>Hour &amp; season light</strong><p>Simulated daylight for any date of the year.</p></div>
+        </li>
+        <li>
+          <span class="f-num">iii</span>
+          <div><strong>Measure in place</strong><p>Tap any wall or floor to read its true dimension.</p></div>
+        </li>
+      </ul>
+
+      <a href="#contact" class="btn btn-dark">Request a walkthrough →</a>
+    </div>
+
+    <div class="wt-stage reveal" id="wtStage">
+      <div class="stage-inner" id="stageInner">
+        <figure class="plane p-main tilt" data-tilt="7">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" alt="Bedroom with linen tones" onerror="this.remove()">
+          <figcaption>Principal suite · Casa Marena</figcaption>
+        </figure>
+        <figure class="plane p-left">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=80" alt="Sitting area with soft light" onerror="this.remove()">
+          <figcaption>Sitting room</figcaption>
+        </figure>
+        <figure class="plane p-right">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80" alt="Open living space" onerror="this.remove()">
+          <figcaption>Living space</figcaption>
+        </figure>
+        <div class="plane p-floor" aria-hidden="true"></div>
+        <div class="plane p-wall" aria-hidden="true"></div>
+      </div>
+      <div class="stage-hint">Move your cursor to look around</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIGURES ============ -->
+<section class="figures">
+  <div class="container fig-grid">
+    <div class="fig reveal"><strong data-count="146">0</strong><span>Residences on file</span></div>
+    <div class="fig reveal"><strong data-count="19">0</strong><span>Median days to exchange</span></div>
+    <div class="fig reveal"><strong data-count="98">0</strong><span>% sold off-market or first viewing</span></div>
+    <div class="fig reveal"><strong data-count="4">0</strong><span>Cities, deliberately limited</span></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <div class="about-img grad-g">
+        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1200&q=80" alt="House behind a hedge" onerror="this.remove()">
+      </div>
+      <div class="about-caption">
+        <span class="rule-v"></span>
+        <p>Fig. 04 — A residence we represented in Kihim, photographed the morning of handover.</p>
+      </div>
+    </div>
+
+    <div class="about-copy reveal">
+      <p class="eyebrow">03 — The Practice</p>
+      <h2 class="display-sm">We would rather<br>show you nine homes<br>than ninety.</h2>
+      <p class="body-lg">
+        RBAS began as a two-person office above a bookshop in Bandra.
+        We still work the same way: slowly, in person, and with a bias toward
+        buildings that were drawn by someone who cared.
+      </p>
+      <p class="body-lg">
+        No buyer brokerage. No listings we haven't stood inside.
+        No pressure to see anything you didn't ask for.
+      </p>
+
+      <div class="about-points">
+        <div><span>01</span><p>Independent advice, no seller incentives.</p></div>
+        <div><span>02</span><p>Structural and title review before any offer.</p></div>
+        <div><span>03</span><p>Styling and handover managed end to end.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADVISORS ============ -->
+<section class="advisors" id="advisors">
+  <div class="container">
+    <header class="sec-head reveal">
+      <div>
+        <p class="eyebrow">04 — Advisors</p>
+        <h2 class="display-sm">Three people.<br>One point of contact.</h2>
+      </div>
+      <p class="sec-note">You will speak to the same advisor from first viewing to final signature. No call centres, no handovers.</p>
+    </header>
+
+    <div class="people">
+      <article class="person reveal">
+        <div class="portrait grad-p1">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Portrait of Aarav Rao" onerror="this.remove()">
+        </div>
+        <h3>Aarav Rao</h3>
+        <p class="role">Principal · South Mumbai</p>
+        <p class="langs">English, Hindi, Marathi</p>
+      </article>
+
+      <article class="person reveal">
+        <div class="portrait grad-p2">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Portrait of Naina Iyer" onerror="this.remove()">
+        </div>
+        <h3>Naina Iyer</h3>
+        <p class="role">Advisor · Villas &amp; Estates</p>
+        <p class="langs">English, Hindi, Konkani</p>
+      </article>
+
+      <article class="person reveal">
+        <div class="portrait grad-p3">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Portrait of Kabir Mehta" onerror="this.remove()">
+        </div>
+        <h3>Kabir Mehta</h3>
+        <p class="role">Advisor · Investment</p>
+        <p class="langs">English, Hindi, Gujarati</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNAL ============ -->
+<section class="journal" id="journal">
+  <div class="container">
+    <header class="sec-head reveal">
+      <div>
+        <p class="eyebrow">05 — Journal</p>
+        <h2 class="display-sm">Notes on living<br>and building well.</h2>
+      </div>
+      <p class="sec-note">Written by the people who show the houses.</p>
+    </header>
+
+    <div class="posts">
+      <a href="#" class="post reveal">
+        <div class="post-media grad-j1">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80" alt="White modernist facade" onerror="this.remove()">
+        </div>
+        <p class="post-meta">Essay · 6 min</p>
+        <h3>The quiet case for buying an older house</h3>
+        <p class="post-ex">Ceiling heights, mature gardens, and the things a new build simply cannot hurry.</p>
+      </a>
+
+      <a href="#" class="post reveal">
+        <div class="post-media grad-j2">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Contemporary home exterior" onerror="this.remove()">
+        </div>
+        <p class="post-meta">Guide · 4 min</p>
+        <h3>Reading a floor plan like a surveyor</h3>
+        <p class="post-ex">Nine details that separate a generous 2,000 sqft from a cleverly marketed one.</p>
+      </a>
+
+      <a href="#" class="post reveal">
+        <div class="post-media grad-j3">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="House with landscaped garden" onerror="this.remove()">
+        </div>
+        <p class="post-meta">Field note · 3 min</p>
+        <h3>What monsoon tells you about a roof</h3>
+        <p class="post-ex">Why we always visit between June and September, and what we're listening for.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="contact">
+  <div class="container cta-inner reveal">
+    <p class="eyebrow light">06 — Private Viewing</p>
+    <h2 class="display">Tell us the life.<br>We'll find the <em>rooms</em>.</h2>
+    <p class="cta-sub">Leave an address and an advisor will reply the same working day. No newsletter, no drip campaign.</p>
+
+    <form class="cta-form" onsubmit="event.preventDefault(); this.reset(); this.querySelector('.ok').hidden=false;">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email address" required>
+      <button class="btn btn-light" type="submit">Request a viewing</button>
+      <p class="ok" hidden>Received — an advisor will be in touch today.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <a href="#" class="brand light">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">RBAS</span>
+      </a>
+      <p>Estates &amp; residences.<br>Mumbai · Goa · Alibaug · Pune</p>
+      <p class="fine">RERA registered · Maha/Agent/2009/000412</p>
+    </div>
+
+    <div class="foot-col">
+      <h4>Collection</h4>
+      <a href="#collection">Apartments</a>
+      <a href="#collection">Villas</a>
+      <a href="#collection">Penthouses</a>
+      <a href="#collection">Off-market</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Practice</h4>
+      <a href="#about">About</a>
+      <a href="#advisors">Advisors</a>
+      <a href="#journal">Journal</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="tel:+912200000000">+91 22 0000 0000</a>
+      <a href="mailto:studio@rbas.in">studio@rbas.in</a>
+      <a href="#">14 Chapel Road, Bandra West</a>
+      <a href="#">Mon – Sat, 10 – 7</a>
+    </div>
+  </div>
+
+  <div class="container foot-base">
+    <span>© 2026 RBAS Estates LLP</span>
+    <span>Privacy · Terms · Disclaimer</span>
+  </div>
+</footer>
+
+<!-- ============ PROPERTY DETAIL MODAL ============ -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="modal-close" data-close aria-label="Close"><span></span><span></span></button>
+
+    <div class="m-gallery">
+      <div class="m-hero" id="mHero">
+        <img id="mHeroImg" src="" alt="">
+        <span class="badge" id="mBadge">3D Tour</span>
+        <span class="m-count" id="mCount">01 / 03</span>
+      </div>
+      <div class="m-thumbs" id="mThumbs"></div>
+      <div class="m-galnote">Photographed on site · Images indicative of condition at listing</div>
+    </div>
+
+    <div class="m-info">
+      <p class="m-ref" id="mRef">Ref. RBAS-01</p>
+      <p class="eyebrow" id="mType">Villa · For sale</p>
+      <h2 class="m-title" id="mTitle">Residence</h2>
+      <p class="m-loc" id="mLoc">—</p>
+
+      <div class="m-price-row">
+        <span class="m-price" id="mPrice">—</span>
+        <span class="m-psf" id="mPsf">—</span>
+      </div>
+
+      <div class="m-specs" id="mSpecs"></div>
+
+      <div class="m-desc" id="mDesc"></div>
+
+      <h3 class="m-h3">In this residence</h3>
+      <ul class="m-amen" id="mAmen"></ul>
+
+      <h3 class="m-h3">Around the corner</h3>
+      <ul class="m-near" id="mNear"></ul>
+
+      <div class="m-agent">
+        <div class="m-agent-av" id="mAgentInit">AR</div>
+        <div class="m-agent-txt">
+          <strong id="mAgentName">Aarav Rao</strong>
+          <p id="mAgentRole">Your advisor · Bandra &amp; South Mumbai</p>
+        </div>
+        <a class="btn btn-ghost" href="tel:+912200000000">Call</a>
+      </div>
+
+      <div class="m-book" id="mBook">
+        <div class="m-book-head">
+          <h3 class="m-h3">Book a private visit</h3>
+          <p>Weekdays 10 – 7. Saturday by arrangement. No obligation.</p>
+        </div>
+
+        <form class="bf" id="bookForm" novalidate>
+          <div class="bf-row">
+            <label class="bf-field">Full name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label class="bf-field">Phone
+              <input type="tel" name="phone" required autocomplete="tel" placeholder="+91">
+            </label>
+          </div>
+
+          <div class="bf-row">
+            <label class="bf-field">Preferred date
+              <input type="date" name="date" id="bookDate" required>
+            </label>
+            <label class="bf-field">Preferred time
+              <select name="time" required>
+                <option value="">Select…</option>
+                <option>10:00 am</option>
+                <option>11:30 am</option>
+                <option>1:00 pm</option>
+                <option>3:00 pm</option>
+                <option>4:30 pm</option>
+                <option>6:00 pm</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="bf-field">Notes <span class="opt">(optional)</span>
+            <textarea name="notes" rows="2" placeholder="Who's coming, what you'd like to see…"></textarea>
+          </label>
+
+          <div class="bf-foot">
+            <button class="btn btn-light" type="submit">Confirm booking</button>
+            <span class="bf-err" id="bfErr" hidden>Please complete name, phone, date and time.</span>
+          </div>
+
+          <div class="bf-ok" id="bfOk" hidden>
+            <span class="tick">✓</span>
+            <div>
+              <strong>Visit requested</strong>
+              <p id="bfOkTxt">—</p>
+              <button type="button" class="bf-again" id="bfAgain">Book another time</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
